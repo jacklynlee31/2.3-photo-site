@@ -1,0 +1,116 @@
+@import 'reset';
+
+$fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts" !default; // for referencing Bootstrap CDN font files directly
+
+@import 'font-awesome';
+@import 'bourbon';
+@import 'neat';
+
+@import "sassmatic";
+
+$black: #191919;
+$lightgrey: #464346;
+$white: #fff;
+$orange: #EB393B;
+$font: 'Montserrat', sans-serif;
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  font-family: $font;
+  background-color: $black;
+  color: $white;
+  padding: 1em 1em 2em 2em;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.icons {
+	color: $lightgrey;
+}
+.name1 {
+	padding-left: 3em;
+}
+.name2 {
+	color: $lightgrey;
+}
+.links {
+	text-decoration: none;
+	color: $lightgrey;
+	float: right;
+}
+.links a:nth-of-type(2) {
+	color: $orange;
+}
+.links a:hover {
+	color: $orange;
+}
+.logo {
+	position: relative;
+	text-align: center;
+	width:100%;
+}
+.chevron {
+	font-size: 2em;
+	color: $orange;
+	position: absolute;
+	top:50%;
+	left: 49%;
+}
+.logo img {
+	@extend %filter-casablanca;
+	width: 9em;
+	border-radius: 5em;
+}
+.title {
+	position: absolute;
+	top:90%;
+	left: 46.8%;
+}
+
+.row {
+	padding-top: 3em;
+	@include outer-container(960px);
+}
+
+.photo {
+	@include span-columns(6);
+	@include shift(1);
+	padding-bottom: 3em;
+}
+
+.photo img {
+	@extend %filter-noire;
+	width: 100%;
+	padding-bottom: 1em;
+}
+.photo img:hover {
+	@extend %filter-nikki;
+}
+.photo-right {
+	width: 20em;
+	display: inline-block;
+}
+.description {
+	li:nth-of-type(1) {
+	color: $orange;
+	font-weight: bold;
+}
+	padding-bottom: 30em;
+	line-height: 2em;
+}
+.phototitle {
+	color: lighten($lightgrey,30%);
+	font-weight: bold;
+	font-size: 1.3em;
+}
+.date {
+	color: $lightgrey;
+	font-size: .8em;
+}
+.description li {
+	color: lighten($lightgrey,30%)
+}
+.description [class*="fa"] {
+	color: $lightgrey;
+}
