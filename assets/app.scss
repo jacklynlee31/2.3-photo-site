@@ -114,3 +114,20 @@ html {
 .description [class*="fa"] {
 	color: $lightgrey;
 }
+
+.bottom {
+	padding-top: 4em;
+	text-align: center;
+}
+
+.bottom img:hover {
+	@extend %filter-nikki;
+}
+
+.bottom img {
+	@extend %filter-noire;
+	width: 20em;
+	padding-bottom: 1em;
+	display: inline-block;
+	margin:2em;
+}
