@@ -2058,11 +2058,24 @@ html {
   color: #464346; }
 
 .bottom {
-  padding-top: 4em;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
 
 .bottom img {
-  width: 20em;
-  padding-bottom: 1em;
-  display: inline-block;
-  margin: 2em; }
+  width: 25em;
+  text-align: center;
+  margin: 1em; }
+
+.bottom a:hover {
+  color: #EB393B; }
+
+.bottom-p {
+  position: absolute;
+  top: 22em;
+  left: 20em;
+  padding-bottom: 3em; }
+
+.bottom-p2 {
+  position: absolute;
+  top: 22em;
+  left: 46em; }
