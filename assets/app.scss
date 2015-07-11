@@ -116,18 +116,33 @@ html {
 }
 
 .bottom {
-	padding-top: 4em;
 	text-align: center;
+	position: relative;
+}
+
+.bottom img {
+	@extend %filter-noire;
+	width: 25em;
+	text-align: center;
+	margin: 1em;
 }
 
 .bottom img:hover {
 	@extend %filter-nikki;
 }
 
-.bottom img {
-	@extend %filter-noire;
-	width: 20em;
-	padding-bottom: 1em;
-	display: inline-block;
-	margin:2em;
+.bottom a:hover {
+	color: $orange;
+}
+
+.bottom-p {
+	position: absolute;
+	top:22em;
+	left: 20em;
+	padding-bottom: 3em;
+}
+.bottom-p2 {
+	position: absolute;
+	top:22em;
+	left: 46em;
 }
