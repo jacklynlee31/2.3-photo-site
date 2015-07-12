@@ -2059,7 +2059,8 @@ html {
 
 .bottom {
   text-align: center;
-  position: relative; }
+  position: relative;
+  padding-top: 8em; }
 
 .bottom img {
   width: 25em;
@@ -2071,11 +2072,19 @@ html {
 
 .bottom-p {
   position: absolute;
-  top: 22em;
+  top: 30em;
   left: 20em;
   padding-bottom: 3em; }
 
 .bottom-p2 {
   position: absolute;
-  top: 22em;
+  top: 30em;
   left: 46em; }
+
+@media (max-width: 1024px) {
+  div {
+    background-color: #191919; } }
+
+@media (max-width: 460px) {
+  div {
+    background-color: yellow; } }
