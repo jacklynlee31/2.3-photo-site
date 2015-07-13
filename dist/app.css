@@ -1883,7 +1883,7 @@ Filter Washout
 /* =========================================
 Filter Nikki
 ========================================= */
-.row2 img:hover, .bottom-p img:hover {
+.row2 img:hover, .row-bottom img:hover {
   -webkit-filter: saturate(1.3) brightness(1.1) contrast(1.1);
   position: relative; }
 
@@ -1896,10 +1896,10 @@ Filter SanFran
 /* =========================================
 Filter Noire
 ========================================= */
-.row2 img, .bottom-p img, .bottom-p2 img {
+.row2 img, .row-bottom img {
   -webkit-filter: grayscale(90%) contrast(1.3);
   position: relative; }
-  .row2 img:after, .bottom-p img:after, .bottom-p2 img:after {
+  .row2 img:after, .row-bottom img:after {
     background-image: radial-gradient(center, ellipse cover, transparent 0%, rgba(0, 0, 0, 0.65) 82%, rgba(0, 0, 0, 0.69) 83%, black 90%);
     bottom: 0;
     content: '';
@@ -2066,13 +2066,25 @@ html {
     content: "";
     display: table; }
 
-.bottom-p img {
+.row-bottom img {
   width: 25em; }
 
-.bottom-p2 img {
-  width: 25em; }
+.bottom-t {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  .bottom-t:last-child {
+    margin-right: 0; }
+  .bottom-t:nth-of-type(odd) {
+    margin-left: 17.05961%; }
+  .bottom-t img {
+    width: 100%; }
 
-.bottom-p a:hover {
+.bottom-t a {
+  display: block; }
+
+.bottom-t a:hover {
   color: #EB393B; }
 
 @media (max-width: 1024px) {
