@@ -162,9 +162,20 @@ div {
 	background-color: $black;
 }
 .row {
+	text-align: center;
 }
-.photo-right {
+.phototitle {
+	left: 0px;
+	text-align: center;
 }
+.date {
+	left: 0px;
+}
+.description {
+	display: block;
+	text-align: center;
+}
+
 }
 
 @media (max-width: 460px) {
