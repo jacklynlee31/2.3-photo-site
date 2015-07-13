@@ -1883,7 +1883,7 @@ Filter Washout
 /* =========================================
 Filter Nikki
 ========================================= */
-.row2 img:hover, .bottom img:hover {
+.row2 img:hover, .bottom-p img:hover {
   -webkit-filter: saturate(1.3) brightness(1.1) contrast(1.1);
   position: relative; }
 
@@ -1896,10 +1896,10 @@ Filter SanFran
 /* =========================================
 Filter Noire
 ========================================= */
-.row2 img, .bottom img {
+.row2 img, .bottom-p img, .bottom-p2 img {
   -webkit-filter: grayscale(90%) contrast(1.3);
   position: relative; }
-  .row2 img:after, .bottom img:after {
+  .row2 img:after, .bottom-p img:after, .bottom-p2 img:after {
     background-image: radial-gradient(center, ellipse cover, transparent 0%, rgba(0, 0, 0, 0.65) 82%, rgba(0, 0, 0, 0.69) 83%, black 90%);
     bottom: 0;
     content: '';
@@ -2037,7 +2037,8 @@ html {
   font-size: 1.3em;
   display: block;
   position: relative;
-  left: 10em; }
+  left: 10em;
+  padding-top: .8em; }
 
 .date {
   color: #464346;
@@ -2051,29 +2052,28 @@ html {
 .description [class*="fa"] {
   color: #464346; }
 
-.bottom {
-  text-align: center;
-  position: relative;
-  padding-top: 8em; }
+.bottom-text {
+  padding-bottom: 2em; }
 
-.bottom img {
-  width: 25em;
+.row-bottom {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  margin: 1em; }
+  padding-top: 5em; }
+  .row-bottom::after {
+    clear: both;
+    content: "";
+    display: table; }
 
-.bottom a:hover {
+.bottom-p img {
+  width: 25em; }
+
+.bottom-p2 img {
+  width: 25em; }
+
+.bottom-p a:hover {
   color: #EB393B; }
-
-.bottom-p {
-  position: absolute;
-  top: 30em;
-  left: 20em;
-  padding-bottom: 3em; }
-
-.bottom-p2 {
-  position: absolute;
-  top: 30em;
-  left: 46em; }
 
 @media (max-width: 1024px) {
   div {
