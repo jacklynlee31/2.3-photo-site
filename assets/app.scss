@@ -103,6 +103,7 @@ html {
 	display: block;
 	position: relative;
 	left: 10em;
+	padding-top: .8em;
 }
 .date {
 	color: $lightgrey;
@@ -117,37 +118,35 @@ html {
 	color: $lightgrey;
 }
 
-.bottom {
-	text-align: center;
-	position: relative;
-	padding-top: 8em;
+.bottom-text {
+	padding-bottom: 2em;
 }
 
-.bottom img {
+.row-bottom {
+	@include outer-container(1140px);
+	text-align: center;
+	padding-top: 5em;
+}
+
+.bottom-p img {
 	@extend %filter-noire;
 	width: 25em;
-	text-align: center;
-	margin: 1em;
 }
 
-.bottom img:hover {
+.bottom-p2 img {
+	@extend %filter-noire;
+	width: 25em;
+}
+
+.bottom-p img:hover {
 	@extend %filter-nikki;
 }
 
-.bottom a:hover {
-	color: $orange;
+.bottom-p a {
 }
 
-.bottom-p {
-	position: absolute;
-	top:30em;
-	left: 20em;
-	padding-bottom: 3em;
-}
-.bottom-p2 {
-	position: absolute;
-	top:30em;
-	left: 46em;
+.bottom-p a:hover {
+	color: $orange;
 }
 
 @media (max-width: 1024px) {
