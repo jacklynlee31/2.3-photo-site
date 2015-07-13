@@ -128,24 +128,32 @@ html {
 	padding-top: 5em;
 }
 
-.bottom-p img {
+.row-bottom img {
 	@extend %filter-noire;
 	width: 25em;
 }
 
-.bottom-p2 img {
-	@extend %filter-noire;
-	width: 25em;
-}
-
-.bottom-p img:hover {
+.row-bottom img:hover {
 	@extend %filter-nikki;
 }
 
-.bottom-p a {
+.bottom-t {
+	@include span-columns(4);
+
+	&:nth-of-type(odd) {
+		@include shift(2);
+	}
+
+	img {
+		width: 100%;
+	}
 }
 
-.bottom-p a:hover {
+.bottom-t a {
+	display: block;
+}
+
+.bottom-t a:hover {
 	color: $orange;
 }
 
