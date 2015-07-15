@@ -2089,7 +2089,17 @@ html {
 
 @media (max-width: 1024px) {
   div {
-    background-color: #191919; } }
+    background-color: #191919; }
+  .row {
+    text-align: center; }
+  .phototitle {
+    left: 0px;
+    text-align: center; }
+  .date {
+    left: 0px; }
+  .description {
+    display: block;
+    text-align: center; } }
 
 @media (max-width: 460px) {
   div {
