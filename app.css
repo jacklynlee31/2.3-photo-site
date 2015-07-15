@@ -2102,5 +2102,8 @@ html {
     text-align: center; } }
 
 @media (max-width: 460px) {
-  div {
-    background-color: yellow; } }
+  .row2 img {
+    width: 100%; }
+  .logo img {
+    margin-left: 0px;
+    margin-right: 0px; } }
