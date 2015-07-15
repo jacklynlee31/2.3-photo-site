@@ -1,0 +1,21 @@
+{
+  "name": "2.3-photo-site",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jacklynlee31/2.3-photo-site",
+  "authors": [
+    "Jacklyn Carroll <jacklynlee31@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fontawesome": "~4.3.0",
+    "css-reset": "~2.5.1",
+    "neat": "~1.7.2"
+  }
+}
