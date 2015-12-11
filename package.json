@@ -1,0 +1,16 @@
+{
+  "name": "2.3-photo-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "broccoli": "rtablada/broccoli#feature/server-returns",
+    "broccoli-merge-trees": "^0.2.1",
+    "broccoli-sass": "^0.6.6"
+  }
+}
